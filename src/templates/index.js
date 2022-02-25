@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { Header, Paragraph } from 'flotiq-components-react';
 import Layout from '../layouts/layout';
+import SocialMediaIcons from '../components/SocialMediaIcons';
 
 const topHeader = 'Hi, I am';
 const mainHeader1 = 'Joe';
@@ -16,13 +17,12 @@ const IndexPage = ({ data, pageContext }) => {
             <Helmet>
                 <title>Flotiq Gatsby portfolio starter</title>
             </Helmet>
-
-            <div className="max-w-7xl mx-auto grid grid-cols-2">
-                <div>
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2">
+                <div className="py-10">
                     <Header
                         level={2}
                         text={topHeader}
-                        additionalClasses={['font-lora uppercase !text-xl mb-3 p-0']}
+                        additionalClasses={['font-lora uppercase !text-xl mb-3 !p-0']}
                     />
                     <Header
                         text={mainHeader1}
@@ -36,6 +36,7 @@ const IndexPage = ({ data, pageContext }) => {
                         text={descriptionText}
                         additionalClasses={['font-lora italic uppercase text-xl mt-2']}
                     />
+                    <SocialMediaIcons/>
                 </div>
                 <div>Project cards</div>
             </div>

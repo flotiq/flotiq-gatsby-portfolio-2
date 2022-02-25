@@ -1,0 +1,7 @@
+{
+  "name": "flotiq-gatsby-portfolio-2",
+  "version": "1.0.0",
+  "dependencies": {
+    "flotiq-components-react": "^0.4.13"
+  }
+}
