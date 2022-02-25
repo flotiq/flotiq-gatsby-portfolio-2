@@ -9,8 +9,7 @@ module.exports = {
                 primary: '#323232',
                 secondary: '#0083FC',
                 gray: '#969696',
-                'light-gray': '#f1f1f1',
-                'lighter-gray': '#f9f9f9',
+                'light-gray': '#f9f9f9',
             },
             fontFamily: {
                 lora: ['Lora', 'sans-serif'],
