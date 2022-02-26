@@ -66,16 +66,19 @@ const socialIcons = {
     ],
 };
 
-const SocialMediaIcons = () => (
-    <div>
+const SocialMediaIcons = ({ additionalClass, iconAdditionalClass, iconImageAdditionalClass }) => (
+    <div className={['flex space-x-4', ...additionalClass].join(' ')}>
         {socialIcons.social.map((item) => (
             <a
                 key={item.name}
                 href={item.href}
-                className="text-gray hover:text-secondary p-2 bg-light-gray rounded-lg"
+                className={['p-2 bg-light-gray rounded-xl', ...iconAdditionalClass].join(' ')}
             >
                 <span className="sr-only">{item.name}</span>
-                <item.icon className="h-5 w-5 md:h-6 md:w-6 hover:text-secondary" aria-hidden="true" />
+                <item.icon
+                    className={['h-5 w-5 md:h-6 md:w-6', ...iconImageAdditionalClass].join(' ')}
+                    aria-hidden="true"
+                />
             </a>
         ))}
     </div>

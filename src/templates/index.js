@@ -3,7 +3,8 @@ import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 import { Header, Paragraph } from 'flotiq-components-react';
 import Layout from '../layouts/layout';
-import SocialMediaIcons from '../components/SocialMediaIcons';
+import Contact from '../components/Contact';
+import contactFormImage from '../assets/contact-form-image.png';
 
 const topHeader = 'Hi, I am';
 const mainHeader1 = 'Joe';
@@ -24,19 +25,31 @@ const IndexPage = ({ data, pageContext }) => {
                         text={topHeader}
                         additionalClasses={['font-lora uppercase !text-xl mb-3 !p-0']}
                     />
-                    <Header
-                        text={mainHeader1}
-                        additionalClasses={['!p-0 uppercase font-archivo tracking-widest !text-8xl']}
-                    />
-                    <Header
-                        text={mainHeader2}
-                        additionalClasses={['!p-0 uppercase font-archivo tracking-widest !text-8xl']}
-                    />
+                    <div>
+                        <Header
+                            text={mainHeader1}
+                            additionalClasses={['!p-0 uppercase font-archivo tracking-widest !text-7xl md:!text-8xl']}
+                        />
+                        <Header
+                            text={mainHeader2}
+                            additionalClasses={['!p-0 uppercase font-archivo tracking-widest !text-7xl md:!text-8xl']}
+                        />
+                    </div>
                     <Paragraph
                         text={descriptionText}
                         additionalClasses={['font-lora italic uppercase text-xl mt-2']}
                     />
-                    <SocialMediaIcons/>
+                    <Contact
+                        contactFormImage={contactFormImage}
+                        headerText1="Let's"
+                        headerText2="work"
+                        headerText3="toget"
+                        headerText4="her"
+                        nameInputPlaceholder="name"
+                        messageInputPlaceholder="message"
+                        buttonLabel="Send"
+                        additionalClass={['mt-20 md:w-full lg:w-3/5']}
+                    />
                 </div>
                 <div>Project cards</div>
             </div>
