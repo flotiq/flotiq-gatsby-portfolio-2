@@ -3,7 +3,7 @@ import { PoweredByFlotiq } from 'flotiq-components-react';
 
 const Footer = () => (
     <footer className="flex flex-col items-center justify-center">
-        <div className="w-auto px-2 md:px-5 py-5 mt-20
+        <div className="w-auto px-2 md:px-5 py-5 mt-10
                 inline-flex justify-between md:justify-center items-center
                 bg-light-gray rounded-t-lg text-dark"
         >

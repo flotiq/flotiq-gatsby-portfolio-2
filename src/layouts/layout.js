@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 const Layout = ({ children, additionalClass = [] }) => (
-    <main className={['font-playfair', ...additionalClass].join(' ')}>
+    <main className={['px-4 font-lora text-primary', ...additionalClass].join(' ')}>
         <Header />
         {children}
         <Footer />
