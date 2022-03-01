@@ -9,7 +9,8 @@ module.exports = {
                 primary: '#323232',
                 secondary: '#0083FC',
                 gray: '#969696',
-                'light-gray': '#f9f9f9',
+                'medium-gray': '#f9f9f9',
+                'light-gray': '#f1f1f1',
             },
             fontFamily: {
                 lora: ['Lora', 'sans-serif'],
@@ -22,6 +23,7 @@ module.exports = {
     ],
     plugins: [
         require('@tailwindcss/typography'),
+        require('@tailwindcss/line-clamp'),
     ],
     safelist: require('./node_modules/flotiq-components-react/dist/tailwind.safelist'),
 };
