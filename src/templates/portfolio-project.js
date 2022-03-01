@@ -6,7 +6,7 @@ import Layout from '../layouts/layout';
 const PortfolioProjectTemplate = ({ data }) => {
     const { project } = data;
     return (
-        <Layout additionalClass={['bg-light-gray md:bg-white']}>
+        <Layout additionalClass={['bg-medium-gray md:bg-white']}>
             <Header text={project.name} />
         </Layout>
     );
