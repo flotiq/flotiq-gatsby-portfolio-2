@@ -5,6 +5,7 @@ import { Header, Paragraph } from 'flotiq-components-react';
 import Layout from '../layouts/layout';
 import Contact from '../components/Contact';
 import contactFormImage from '../assets/contact-form-image.png';
+import ProjectCards from '../sections/ProjectCards';
 
 const topHeader = 'Hi, I am';
 const mainHeader1 = 'Joe';
@@ -14,11 +15,11 @@ const descriptionText = 'I am professional 3d artist';
 const IndexPage = ({ data, pageContext }) => {
     const projects = data.allProject.nodes;
     return (
-        <Layout additionalClass={['bg-light-gray md:bg-white']}>
+        <Layout additionalClass={['bg-medium-gray md:bg-white']}>
             <Helmet>
                 <title>Flotiq Gatsby portfolio starter</title>
             </Helmet>
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-2">
                 <div className="py-10">
                     <Header
                         level={2}
@@ -51,7 +52,9 @@ const IndexPage = ({ data, pageContext }) => {
                         additionalClass={['mt-20 md:w-full lg:w-3/5']}
                     />
                 </div>
-                <div>Project cards</div>
+                <div>
+                    <ProjectCards projects={projects} />
+                </div>
             </div>
         </Layout>
     );
