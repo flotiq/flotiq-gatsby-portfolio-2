@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Header, Paragraph, Image } from 'flotiq-components-react';
 import Layout from '../layouts/layout';
+import ProjectGallery from '../components/ProjectGallery';
 
 const PortfolioProjectTemplate = ({ data }) => {
     const { project } = data;
@@ -24,6 +25,22 @@ const PortfolioProjectTemplate = ({ data }) => {
                         <Image
                             url={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
                             additionalClasses={['rounded-3xl w-full']}
+                        />
+                    </div>
+                </div>
+                <div className="grid lg:grid-cols-3">
+                    <div>
+                        <div className="pr-5 mb-6 md:mb-0">
+                            <Header text={project.gallery_name} additionalClasses={['!text-2xl mb-5']} />
+                            <Paragraph text={project.gallery_description} additionalClasses={['!font-lg font-sora']} />
+                        </div>
+
+                    </div>
+                    <div className="col-span-2">
+                        <ProjectGallery
+                            additionalClass={['text-base md:']}
+                            gallery={project.gallery}
+                            name={project.name}
                         />
                     </div>
                 </div>
