@@ -10,10 +10,10 @@ const PortfolioProjectTemplate = ({ data }) => {
         <Layout additionalClass={['bg-medium-gray md:bg-white']}>
             <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-3">
-                    <div className="pr-10 py-10 order-2 lg:order-1">
+                    <div className="lg:pr-10 py-10 order-2 lg:order-1">
                         <Header
                             text={project.name}
-                            additionalClasses={['font-archivo uppercase tracking-widest !text-6xl '
+                            additionalClasses={['font-archivo uppercase tracking-widest !text-4xl md:!text-6xl '
                             + 'mb-5 lg:mb-10 text-center lg:text-left']}
                         />
                         <Paragraph
@@ -24,7 +24,7 @@ const PortfolioProjectTemplate = ({ data }) => {
                     <div className="col-span-2 order-1 lg:order-2">
                         <Image
                             url={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
-                            additionalClasses={['rounded-3xl w-full']}
+                            additionalClasses={['rounded-3xl w-full px-1']}
                         />
                     </div>
                 </div>
@@ -36,9 +36,8 @@ const PortfolioProjectTemplate = ({ data }) => {
                         </div>
 
                     </div>
-                    <div className="col-span-2">
+                    <div className="col-span-2 pt-16">
                         <ProjectGallery
-                            additionalClass={['text-base md:']}
                             gallery={project.gallery}
                             name={project.name}
                         />
