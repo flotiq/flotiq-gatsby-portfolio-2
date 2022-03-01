@@ -1,12 +1,11 @@
 import React from 'react';
 import { Card, Button } from 'flotiq-components-react';
 
-const ProjectCard = ({ onClick, name, excerpt, image }) => (
+const ProjectCard = ({ name, excerpt, image }) => (
     <Card
         bordered={false}
         horizontal
         rounded="none"
-        onClick={onClick}
         additionalClasses={['flex mb-5 !bg-transparent']}
     >
         <Card.Img
@@ -29,9 +28,10 @@ const ProjectCard = ({ onClick, name, excerpt, image }) => (
                 </Card.Text>
                 <div className="relative mr-5 w-fit">
                     <Button
+                        variant="secondary"
                         label="Explore"
                         size="lg"
-                        additionalClasses={['bg-secondary font-archivo font-normal '
+                        additionalClasses={['font-archivo font-normal '
                         + 'uppercase !text-base tracking-wide md:-ml-20 relative z-[1] '
                         + '!py-5 lg:!py-3 xl:!py-5']}
                     />
