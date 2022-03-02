@@ -24,14 +24,16 @@ const PortfolioProjectTemplate = ({ data }) => {
                     <div className="col-span-2 order-1 lg:order-2">
                         <Image
                             url={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
-                            additionalClasses={['rounded-3xl w-full px-1']}
+                            rounded="3xl"
+                            stretched={true}
+                            additionalClasses={['px-1']}
                         />
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-3">
                     <div>
                         <div className="pr-5 mb-6 md:mb-0">
-                            <Header text={project.gallery_name} additionalClasses={['!text-2xl mb-5']} />
+                            <Header text={project.gallery_name} additionalClasses={['mb-5']} level={3} />
                             <Paragraph text={project.gallery_description} additionalClasses={['!font-lg font-sora']} />
                         </div>
 
