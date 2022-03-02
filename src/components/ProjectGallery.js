@@ -5,29 +5,33 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 const responsive = {
     desktop: {
-        breakpoint: { max: 3000, min: 1024 },
+        breakpoint: { max: 3840, min: 1200 },
         items: 3,
     },
     tablet: {
-        breakpoint: { max: 1024, min: 464 },
+        breakpoint: { max: 1200, min: 768 },
         items: 2,
     },
     mobile: {
-        breakpoint: { max: 464, min: 0 },
+        breakpoint: { max: 768, min: 0 },
         items: 1,
     },
 };
 const CarouselNavigation = ({ goToSlide, ...rest }) => {
     const { carouselState: { currentSlide } } = rest;
     return (
-        <div className="md:w-3/4 m-auto flex items-center justify-between font-sora underline font-light text-sm mt-5">
-            <div className="cursor-pointer flex items-center" onClick={() => goToSlide(currentSlide - 1)}>
-                <ArrowLeftIcon className="mr-3 h-5 w-5 text-primary" />
-                Previous work
+        <div className="flex items-center justify-between font-sora underline font-light text-sm mt-5">
+            <div
+                className="cursor-pointer flex items-center bg-secondary px-7 py-3 rounded-full"
+                onClick={() => goToSlide(currentSlide - 1)}
+            >
+                <ArrowLeftIcon className="h-6 w-6 text-white" />
             </div>
-            <div className="cursor-pointer flex items-center" onClick={() => goToSlide(currentSlide + 1)}>
-                Next work
-                <ArrowRightIcon className="ml-3 h-5 w-5 text-primary" />
+            <div
+                className="cursor-pointer flex items-center bg-secondary px-7 py-3 rounded-full"
+                onClick={() => goToSlide(currentSlide + 1)}
+            >
+                <ArrowRightIcon className="h-6 w-6 text-white" />
             </div>
         </div>
     );
@@ -44,7 +48,9 @@ const ProjectGallery = ({ gallery }) => (
         customButtonGroup={<CarouselNavigation />}
     >
         {gallery.map((image) => (
-            <Image url={image.localFile.publicURL} additionalClasses={['px-2']} key={image.id} />
+            <div className="px-1">
+                <Image url={image.localFile.publicURL} additionalClasses={['rounded-3xl']} key={image.id} />
+            </div>
         ))}
     </Carousel>
 );
