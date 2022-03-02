@@ -20,7 +20,7 @@ const ProjectCard = ({ name, excerpt, image }) => (
                     {name}
                 </Card.Title>
                 <Card.Text additionalClasses={['']}>
-                    <div
+                    <span
                         dangerouslySetInnerHTML={{ __html: excerpt }}
                         className="line-clamp-5 lg:line-clamp-3 lg:line-clamp-4 font-lora text-sm
                         xl:text-base uppercase italic mb-10 lg:mb-5 xl:mb-10"
