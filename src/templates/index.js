@@ -19,7 +19,7 @@ const IndexPage = ({ data, pageContext }) => {
             <Helmet>
                 <title>Flotiq Gatsby portfolio starter</title>
             </Helmet>
-            <div className="max-w-7xl mx-auto grid lg:grid-cols-2">
+            <div className="max-w-7xl mx-auto grid lg:grid-cols-2 px-2 sm:px-6 lg:px-8">
                 <div className="py-10">
                     <Header
                         level={2}
