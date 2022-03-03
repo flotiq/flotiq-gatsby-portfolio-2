@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-boilerplate",
+  "name": "flotiq-gatsby-portfolio-2",
   "private": true,
-  "description": "A boilerplate starter for Gatsby",
+  "description": "Flotiq gatsby starter for project portfolio",
   "version": "1.0.0",
   "license": "MIT",
   "author": "Flotiq team <helo@flotiq.com> (https://flotiq.com/)",
@@ -70,9 +70,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/flotiq/gatsby-starter-boilerplate"
+    "url": "https://github.com/flotiq/flotiq-gatsby-portfolio-2"
   },
   "bugs": {
-    "url": "https://github.com/flotiq/gatsby-starter-boilerplate/issues"
+    "url": "https://github.com/flotiq/flotiq-gatsby-portfolio-2/issues"
   }
 }
