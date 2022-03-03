@@ -23,7 +23,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
     ```bash
    npm install -g flotiq-cli
-   flotiq start [flotiqApiKey] [projectName] https://github.com/flotiq/gatsby-starter-boilerplate.git
+   flotiq start [flotiqApiKey] [projectName] https://github.com/flotiq/flotiq-gatsby-portfolio-2.git
     ```
     * `flotiqApKey` - Read and write API key to your Flotiq account
     * `projectName` - project name or project path (if you wish to start project in or import data from the current directory - use `.`)
@@ -31,7 +31,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 2. **You can also start the project from template using Gatsby CLI**
 
     ```bash
-    gatsby new gatsby-starter-boilerplate https://github.com/flotiq/gatsby-starter-boilerplate.git
+    gatsby new flotiq-gatsby-portfolio-2 https://github.com/flotiq/flotiq-gatsby-portfolio-2.git
     ```
 
 3. **Configure application**
@@ -50,7 +50,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd gatsby-starter-boilerplate/
+    cd flotiq-gatsby-portfolio-2/
     gatsby develop
     ```
 
@@ -72,7 +72,7 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
-    Open the `gatsby-starter-boilerplate` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `flotiq-gatsby-portfolio-2` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 6. **Manage your content using Flotiq editor**
 
@@ -82,15 +82,15 @@ This project works on node ^14.17.0 || >=16.0.0, we do not support node 15.
 
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsby-starter-boilerplate)
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/flotiq-gatsby-portfolio-2)
 
 You can also deploy this project to [Heroku](https://www.heroku.com/) in 3 minutes:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/flotiq/gatsby-starter-boilerplate)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/flotiq/flotiq-gatsby-portfolio-2)
 
 Or to [Netlify](https://www.netlify.com/):
 
-[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/flotiq/gatsby-starter-boilerplate)
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/flotiq/flotiq-gatsby-portfolio-2)
 
 
 ## What's inside?
@@ -198,5 +198,5 @@ Documentation for gatsby starters is [here](https://flotiq.com/docs/Universe/gat
 
 If you wish to talk with us about this project, feel free to hop on our [![Discord Chat](https://img.shields.io/discord/682699728454025410.svg)](https://discord.gg/FwXcHnX).
 
-If you found a bug, please report it in [issues](https://github.com/flotiq/gatsby-starter-boilerplate/issues).
+If you found a bug, please report it in [issues](https://github.com/flotiq/flotiq-gatsby-portfolio-2/issues).
 
