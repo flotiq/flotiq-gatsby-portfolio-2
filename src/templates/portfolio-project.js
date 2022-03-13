@@ -25,14 +25,14 @@ const PortfolioProjectTemplate = ({ data }) => {
                         <Image
                             url={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
                             rounded="3xl"
-                            stretched={true}
+                            stretched
                             additionalClasses={['px-1']}
                         />
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-3 py-5 lg:py-24">
                     <div>
-                        <div className="pr-5 mb-6 md:mb-0">
+                        <div className="pr-5 mb-3 lg:mb-0">
                             <Header
                                 text={project.gallery_name}
                                 additionalClasses={['font-archivo uppercase tracking-widest !text-2xl !p-0 lg:mb-5']}
