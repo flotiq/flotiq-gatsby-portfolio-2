@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import { Image, Header, Paragraph } from 'flotiq-components-react';
+import { Image } from 'flotiq-components-react';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 const responsive = {

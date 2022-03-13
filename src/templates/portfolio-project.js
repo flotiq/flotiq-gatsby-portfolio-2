@@ -24,7 +24,9 @@ const PortfolioProjectTemplate = ({ data }) => {
                     <div className="col-span-2 order-1 lg:order-2">
                         <Image
                             url={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
-                            additionalClasses={['rounded-3xl w-full px-1']}
+                            rounded="3xl"
+                            stretched={true}
+                            additionalClasses={['px-1']}
                         />
                     </div>
                 </div>
