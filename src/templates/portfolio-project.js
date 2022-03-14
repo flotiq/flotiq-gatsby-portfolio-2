@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Header, Paragraph, Image } from 'flotiq-components-react';
+import { Helmet } from 'react-helmet';
 import Layout from '../layouts/layout';
 import ProjectGallery from '../components/ProjectGallery';
 
@@ -8,6 +9,13 @@ const PortfolioProjectTemplate = ({ data }) => {
     const { project } = data;
     return (
         <Layout additionalClass={['bg-medium-gray md:bg-white']}>
+            <Helmet>
+                <title>{project.name}</title>
+                <meta
+                    name="description"
+                    content={project.description}
+                />
+            </Helmet>
             <div className="max-w-7xl mx-auto px-2 sm:px-6">
                 <div className="grid lg:grid-cols-3 items-center">
                     <div className="lg:pr-10 py-5 order-2 lg:order-1">

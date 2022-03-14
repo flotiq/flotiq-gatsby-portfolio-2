@@ -20,7 +20,7 @@ const Contact = ({
             iconImageAdditionalClass={['!h-6 !w-6']}
         />
         <div className="relative mt-8">
-            <Image url={contactFormImage} additionalClasses={['w-full']} rounded="3xl" />
+            <Image url={contactFormImage} additionalClasses={['w-full']} rounded="3xl" alt="Let's WOrk together" />
             <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br
             from-white/75 to-transparent p-5 font-archivo uppercase tracking-widest"
             >

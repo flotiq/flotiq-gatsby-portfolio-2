@@ -49,7 +49,7 @@ const ProjectGallery = ({ gallery }) => (
             customButtonGroup={<CarouselNavigation />}
         >
             {gallery.map((image) => (
-                <div className="px-2">
+                <div className="px-2" key={image.id}>
                     <Image url={image.localFile.publicURL} additionalClasses={['rounded-3xl']} key={image.id} />
                 </div>
             ))}

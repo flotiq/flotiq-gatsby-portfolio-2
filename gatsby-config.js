@@ -11,9 +11,9 @@ require('dotenv').config({
 
 module.exports = {
     siteMetadata: {
-        title: 'Flotiq gatsby starter boilerplate',
-        description: 'Flotiq gatsby starter boilerplate',
-        siteUrl: 'https://example.com',
+        title: 'Flotiq gatsby starter for project portfolio',
+        description: 'Flotiq gatsby starter for project portfolio',
+        siteUrl: 'https://flotiqgatsbyportfolio2.gatsbyjs.io',
     },
     plugins: [
         {
@@ -61,8 +61,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
-                host: 'https://your-domain.com',
-                sitemap: 'https://your-domain.com/sitemap.xml',
+                host: 'https://flotiqgatsbyportfolio2.gatsbyjs.io',
+                sitemap: 'https://flotiqgatsbyportfolio2.gatsbyjs.iositemap.xml',
                 policy: [{ userAgent: '*', allow: '/' }],
             },
         },
