@@ -31,7 +31,7 @@ const Header = () => (
 
                             <div className="flex-shrink-0 flex items-center">
                                 <Link to="/">
-                                    <Image url={Logo} additionalClasses={['h-10 md:h-16 w-auto']} />
+                                    <Image url={Logo} additionalClasses={['h-10 md:h-16 w-auto']} alt="Logo"/>
                                 </Link>
                             </div>
                         </div>

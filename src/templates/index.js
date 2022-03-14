@@ -17,7 +17,11 @@ const IndexPage = ({ data, pageContext }) => {
     return (
         <Layout additionalClass={['bg-medium-gray md:bg-white']}>
             <Helmet>
-                <title>Flotiq Gatsby portfolio starter</title>
+                <title>{data.site.siteMetadata.title}</title>
+                <meta
+                    name="description"
+                    content={data.site.siteMetadata.description}
+                />
             </Helmet>
             <div className="max-w-7xl mx-auto grid lg:grid-cols-2 px-2 sm:px-6 lg:px-8">
                 <div className="py-10">
@@ -65,6 +69,7 @@ export const pageQuery = graphql`
         site {
             siteMetadata {
                 title
+                description
             }
         }
         allProject(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: $limit, skip: $skip,) {
