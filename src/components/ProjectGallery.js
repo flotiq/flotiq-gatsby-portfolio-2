@@ -5,15 +5,15 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 const responsive = {
     desktop: {
-        breakpoint: { max: 3840, min: 1200 },
-        items: 3,
+        breakpoint: { max: 3000, min: 1024 },
+        items: 2,
     },
     tablet: {
-        breakpoint: { max: 1200, min: 768 },
+        breakpoint: { max: 1024, min: 464 },
         items: 2,
     },
     mobile: {
-        breakpoint: { max: 768, min: 0 },
+        breakpoint: { max: 464, min: 0 },
         items: 1,
     },
 };
@@ -38,21 +38,23 @@ const CarouselNavigation = ({ goToSlide, ...rest }) => {
 };
 
 const ProjectGallery = ({ gallery }) => (
-    <Carousel
-        draggable={false}
-        infinite
-        autoplay={false}
-        responsive={responsive}
-        arrows={false}
-        renderButtonGroupOutside
-        customButtonGroup={<CarouselNavigation />}
-    >
-        {gallery.map((image) => (
-            <div key={image.id} className="px-1">
-                <Image url={image.localFile.publicURL} rounded="3xl" />
-            </div>
-        ))}
-    </Carousel>
+    <div className="grid grid-cols-1">
+        <Carousel
+            draggable={false}
+            infinite
+            autoplay={false}
+            responsive={responsive}
+            arrows={false}
+            renderButtonGroupOutside
+            customButtonGroup={<CarouselNavigation />}
+        >
+            {gallery.map((image) => (
+                <div className="px-2" key={image.id}>
+                    <Image url={image.localFile.publicURL} additionalClasses={['rounded-3xl']} key={image.id} />
+                </div>
+            ))}
+        </Carousel>
+    </div>
 );
 
 export default ProjectGallery;
