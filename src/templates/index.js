@@ -12,7 +12,7 @@ const mainHeader1 = 'Joe';
 const mainHeader2 = 'Jonas';
 const descriptionText = 'I am professional 3d artist';
 
-const IndexPage = ({ data, pageContext }) => {
+const IndexPage = ({ data }) => {
     const projects = data.allProject.nodes;
     return (
         <Layout additionalClass={['bg-medium-gray md:bg-white']}>
@@ -27,23 +27,27 @@ const IndexPage = ({ data, pageContext }) => {
                 <div className="py-10">
                     <Header
                         level={2}
-                        text={topHeader}
                         additionalClasses={['font-lora uppercase !text-xl mb-3 !p-0']}
-                    />
+                    >
+                        {topHeader}
+                    </Header>
                     <div>
                         <Header
-                            text={mainHeader1}
                             additionalClasses={['!p-0 uppercase font-archivo tracking-widest !text-7xl md:!text-8xl']}
-                        />
+                        >
+                            {mainHeader1}
+                        </Header>
                         <Header
-                            text={mainHeader2}
                             additionalClasses={['!p-0 uppercase font-archivo tracking-widest !text-7xl md:!text-8xl']}
-                        />
+                        >
+                            {mainHeader2}
+                        </Header>
                     </div>
                     <Paragraph
-                        text={descriptionText}
                         additionalClasses={['font-lora italic uppercase text-xl mt-2']}
-                    />
+                    >
+                        {descriptionText}
+                    </Paragraph>
                     <Contact
                         contactFormImage={contactFormImage}
                         headerText1="Let's"

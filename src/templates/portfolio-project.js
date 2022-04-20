@@ -20,14 +20,16 @@ const PortfolioProjectTemplate = ({ data }) => {
                 <div className="grid lg:grid-cols-3 items-center">
                     <div className="lg:pr-10 py-5 order-2 lg:order-1">
                         <Header
-                            text={project.name}
                             additionalClasses={['font-archivo uppercase tracking-widest !text-4xl md:!text-6xl '
                             + 'text-center lg:text-left lg:mb-10']}
-                        />
+                        >
+                            {project.name}
+                        </Header>
                         <Paragraph
-                            text={project.description}
                             additionalClasses={['font-normal italic uppercase text-sm leading-loose px-7 lg:px-0']}
-                        />
+                        >
+                            {project.description}
+                        </Paragraph>
                     </div>
                     <div className="col-span-2 order-1 lg:order-2">
                         <Image
@@ -42,13 +44,15 @@ const PortfolioProjectTemplate = ({ data }) => {
                     <div>
                         <div className="pr-5 mb-3 lg:mb-0">
                             <Header
-                                text={project.gallery_name}
                                 additionalClasses={['font-archivo uppercase tracking-widest !text-2xl !p-0 lg:mb-5']}
-                            />
+                            >
+                                {project.gallery_name}
+                            </Header>
                             <Paragraph
-                                text={project.gallery_description}
                                 additionalClasses={['font-normal italic uppercase text-sm leading-loose']}
-                            />
+                            >
+                                {project.gallery_description}
+                            </Paragraph>
                         </div>
 
                     </div>
