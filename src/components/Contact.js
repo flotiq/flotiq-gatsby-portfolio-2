@@ -24,10 +24,10 @@ const Contact = ({
             <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br
             from-white/75 to-transparent p-5 font-archivo uppercase tracking-widest"
             >
-                <Header text={headerText1} additionalClasses={['!p-0 !text-2xl !leading-none']} />
-                <Header text={headerText2} additionalClasses={['!p-0 !text-2xl !leading-none']} />
-                <Header text={headerText3} additionalClasses={['!p-0 !text-2xl !leading-none']} />
-                <Header text={headerText4} additionalClasses={['!p-0 !text-2xl !leading-none']} />
+                <Header additionalClasses={['!p-0 !text-2xl !leading-none']}>{headerText1}</Header>
+                <Header additionalClasses={['!p-0 !text-2xl !leading-none']}>{headerText2}</Header>
+                <Header additionalClasses={['!p-0 !text-2xl !leading-none']}>{headerText3}</Header>
+                <Header additionalClasses={['!p-0 !text-2xl !leading-none']}>{headerText4}</Header>
             </div>
         </div>
         <form action="#" method="POST" className="font-archivo space-y-2 flex flex-col mt-2">
