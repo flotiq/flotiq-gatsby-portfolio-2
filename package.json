@@ -24,6 +24,7 @@
     "@tailwindcss/typography": "^0.5.2",
     "flotiq-components-react": "^1.0.0",
     "gatsby": "^4.7.2",
+    "gatsby-plugin-gatsby-cloud": "^4.13.0",
     "gatsby-plugin-google-analytics": "^4.7.0",
     "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-manifest": "^4.7.0",
