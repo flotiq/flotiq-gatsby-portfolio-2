@@ -22,4 +22,4 @@ jobs:
       - run: gatsby build
         env:
           GATSBY_FLOTIQ_API_KEY: ${{ secrets.GATSBY_FLOTIQ_API_KEY }}
-          GA_TRACKING_ID: ''
+          GA_MEASUREMENT_ID: ''
