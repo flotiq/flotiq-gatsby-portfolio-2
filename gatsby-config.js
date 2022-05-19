@@ -87,5 +87,15 @@ module.exports = {
             },
         },
         'gatsby-plugin-postcss',
+        {
+            resolve: 'gatsby-plugin-gatsby-cloud',
+            options: {
+                headers: {
+                    '/*': [
+                        'x-frame-options: allow-from https://jamstackthemes.dev/',
+                    ],
+                },
+            },
+        },
     ],
 };
