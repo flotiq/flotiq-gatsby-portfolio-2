@@ -1,9 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Header, Paragraph, Image } from 'flotiq-components-react';
+import { Header, Paragraph } from 'flotiq-components-react';
 import { Helmet } from 'react-helmet';
 import Layout from '../layouts/layout';
 import ProjectGallery from '../components/ProjectGallery';
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const PortfolioProjectTemplate = ({ data }) => {
     const { project } = data;
@@ -21,7 +22,7 @@ const PortfolioProjectTemplate = ({ data }) => {
                     <div className="lg:pr-10 py-5 order-2 lg:order-1">
                         <Header
                             additionalClasses={['font-archivo uppercase tracking-widest !text-4xl md:!text-6xl '
-                            + 'text-center lg:text-left lg:mb-10']}
+                                + 'text-center lg:text-left lg:mb-10']}
                         >
                             {project.name}
                         </Header>
@@ -32,11 +33,11 @@ const PortfolioProjectTemplate = ({ data }) => {
                         </Paragraph>
                     </div>
                     <div className="col-span-2 order-1 lg:order-2">
-                        <Image
-                            url={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
-                            rounded="3xl"
-                            stretched
-                            additionalClasses={['px-1']}
+                        <GatsbyImage
+                            image={getImage(project.headerImage[0] && project.headerImage[0].localFile)}
+                            stretched='true'
+                            className={['px-1 rounded-3xl']}
+                            alt={project.name}
                         />
                     </div>
                 </div>
@@ -88,16 +89,23 @@ export const pageQuery = graphql`
                 localFile {
                     publicURL
                     childImageSharp {
-                        gatsbyImageData(layout: FULL_WIDTH)
+                        gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                     }
                 }
             }
             gallery_name
             gallery_description
             gallery {
+                extension
+                url
+                width
+                height
                 id
                 localFile {
-                    publicURL
+                  publicURL
+                  childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+                }
                 }
             }
         }

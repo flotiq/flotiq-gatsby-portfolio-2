@@ -2,8 +2,7 @@ import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Link } from 'gatsby';
-import { Image } from 'flotiq-components-react';
-import Logo from '../assets/Logo.svg';
+import { StaticImage } from "gatsby-plugin-image";
 
 const Header = () => (
     <Disclosure as="nav">
@@ -31,7 +30,7 @@ const Header = () => (
 
                             <div className="flex-shrink-0 flex items-center">
                                 <Link to="/">
-                                    <Image url={Logo} additionalClasses={['h-10 md:h-16 w-auto']} alt="Logo"/>
+                                    <StaticImage src={'../assets/Logo.svg'} imgClassName={['h-10 md:h-14 w-auto']} width={65} height={64} alt="Logo" placeholder="none" />
                                 </Link>
                             </div>
                         </div>

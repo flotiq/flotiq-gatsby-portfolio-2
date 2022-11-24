@@ -7,7 +7,7 @@ const ProjectCards = ({ projects }) => (
         {projects.map((project) => (
             <Link to={`/${project.slug}`} key={project.id}>
                 <ProjectCard
-                    image={project.headerImage[0] && project.headerImage[0].localFile.publicURL}
+                    image={project.headerImage[0] && project.headerImage[0].localFile}
                     name={project.name}
                     excerpt={project.description}
                 />
