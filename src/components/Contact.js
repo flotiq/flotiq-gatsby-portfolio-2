@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Button } from 'flotiq-components-react';
+import { StaticImage } from 'gatsby-plugin-image';
 import SocialMediaIcons from './SocialMediaIcons';
-import { StaticImage } from "gatsby-plugin-image";
 
 const Contact = ({
     additionalClass,
@@ -20,7 +20,12 @@ const Contact = ({
             iconImageAdditionalClass={['!h-6 !w-6']}
         />
         <div className="relative mt-8">
-            <StaticImage src='../assets/contact-form-image.png' imgClassName={['w-full']} rounded="3xl" alt="Let's WOrk together" />
+            <StaticImage
+                src="../assets/contact-form-image.png"
+                imgClassName={['w-full']}
+                rounded="3xl"
+                alt="Let's WOrk together"
+            />
             <div className="absolute top-0 left-0 h-full w-full bg-gradient-to-br
             from-white/75 to-transparent p-5 font-archivo uppercase tracking-widest"
             >

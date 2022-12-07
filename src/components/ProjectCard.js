@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button } from 'flotiq-components-react';
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const ProjectCard = ({ name, excerpt, image }) => (
     <Card
@@ -14,7 +14,6 @@ const ProjectCard = ({ name, excerpt, image }) => (
             alt={name}
             className={['w-full rounded-3xl basis-full md:basis-1/2 xl:basis-3/5']}
         />
-        {console.log(getImage(image))}
         <Card.Body additionalClasses={['basis-full md:basis-1/2 xl:basis-2/5']}>
             <div>
                 <Card.Title additionalClasses={['font-archivo uppercase tracking-widest']}>
@@ -42,7 +41,7 @@ const ProjectCard = ({ name, excerpt, image }) => (
                 </div>
             </div>
         </Card.Body>
-    </Card >
+    </Card>
 );
 
 export default ProjectCard;

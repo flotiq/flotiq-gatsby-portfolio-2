@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { Header, Paragraph } from 'flotiq-components-react';
 import { Helmet } from 'react-helmet';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Layout from '../layouts/layout';
 import ProjectGallery from '../components/ProjectGallery';
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 const PortfolioProjectTemplate = ({ data }) => {
     const { project } = data;
@@ -35,7 +35,7 @@ const PortfolioProjectTemplate = ({ data }) => {
                     <div className="col-span-2 order-1 lg:order-2">
                         <GatsbyImage
                             image={getImage(project.headerImage[0] && project.headerImage[0].localFile)}
-                            stretched='true'
+                            stretched="true"
                             className={['px-1 rounded-3xl']}
                             alt={project.name}
                         />
