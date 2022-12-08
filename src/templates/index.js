@@ -67,41 +67,45 @@ const IndexPage = ({ data }) => {
 };
 
 export const pageQuery = graphql`
-    query indexQuery($skip: Int!, $limit: Int!) {
-        site {
-            siteMetadata {
-                title
-                description
-            }
-        }
-        allProject(sort: {fields: flotiqInternal___createdAt, order: DESC}, limit: $limit, skip: $skip,) {
-            nodes {
-                id
-                description
-                slug
-                name
-                headerImage {
-                    extension
-                    url
-                    width
-                    height
-                    localFile {
-                        publicURL
-                        childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
-                        }
-                    }
-                }
-                gallery_name
-                gallery_description
-                gallery {
-                    localFile {
-                        publicURL
-                    }
-                }
-            }
-        }
+query indexQuery($skip: Int!, $limit: Int!) {
+    site {
+      siteMetadata {
+        title
+        description
+      }
     }
+    allProject(
+      sort: {flotiqInternal: {createdAt: DESC}}
+      limit: $limit
+      skip: $skip
+    ) {
+      nodes {
+        id
+        description
+        slug
+        name
+        headerImage {
+          extension
+          url
+          width
+          height
+          localFile {
+            publicURL
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
+            }
+          }
+        }
+        gallery_name
+        gallery_description
+        gallery {
+          localFile {
+            publicURL
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default IndexPage;
