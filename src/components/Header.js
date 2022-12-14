@@ -30,14 +30,26 @@ const Header = () => (
 
                             <div className="flex-shrink-0 flex items-center">
                                 <Link to="/">
-                                    <StaticImage
-                                        src="../assets/Logo.svg"
-                                        className={['h-10 md:h-14 w-auto']}
-                                        width={65}
-                                        height={64}
-                                        alt="Logo"
-                                        placeholder="none"
-                                    />
+                                    <>
+                                        <div className='block md:hidden'>
+                                            <StaticImage
+                                                src="../assets/Logo.svg"
+                                                height={40}
+                                                width={41}
+                                                alt="Logo small"
+                                                placeholder="none"
+                                            />
+                                        </div>
+                                        <div className='hidden md:block'>
+                                            <StaticImage
+                                                src="../assets/Logo.svg"
+                                                alt="Logo big"
+                                                width={65}
+                                                height={64}
+                                                placeholder="none"
+                                            />
+                                        </div>
+                                    </>
                                 </Link>
                             </div>
                         </div>
