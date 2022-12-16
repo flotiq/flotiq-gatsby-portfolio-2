@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
-import { Image } from 'flotiq-components-react';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { ArrowLeftIcon, ArrowRightIcon } from '@heroicons/react/solid';
 
 const responsive = {
@@ -50,7 +50,12 @@ const ProjectGallery = ({ gallery }) => (
         >
             {gallery.map((image) => (
                 <div className="px-2" key={image.id}>
-                    <Image url={image.localFile.publicURL} additionalClasses={['rounded-3xl']} key={image.id} />
+                    <GatsbyImage
+                        image={getImage(image.localFile)}
+                        alt={image.id}
+                        className="rounded-3xl"
+                        key={image.id}
+                    />
                 </div>
             ))}
         </Carousel>

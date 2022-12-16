@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import { Header, Paragraph } from 'flotiq-components-react';
 import Layout from '../layouts/layout';
 import Contact from '../components/Contact';
-import contactFormImage from '../assets/contact-form-image.png';
 import ProjectCards from '../sections/ProjectCards';
 
 const topHeader = 'Hi, I am';
@@ -49,7 +48,6 @@ const IndexPage = ({ data }) => {
                         {descriptionText}
                     </Paragraph>
                     <Contact
-                        contactFormImage={contactFormImage}
                         headerText1="Let's"
                         headerText2="work"
                         headerText3="toget"
@@ -90,7 +88,7 @@ export const pageQuery = graphql`
                     localFile {
                         publicURL
                         childImageSharp {
-                            gatsbyImageData(layout: FULL_WIDTH)
+                            gatsbyImageData(layout: FULL_WIDTH, placeholder: NONE)
                         }
                     }
                 }
