@@ -5,15 +5,15 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const portfolioProject = path.resolve('./src/templates/portfolio-project.js');
     const result = await graphql(`
-        query GetProjects {
-            allProject(sort: {order: DESC, fields: flotiqInternal___createdAt}) {
-                edges {
-                    node {
-                        slug
-                    }
-                }
+    query GetProjects {
+        allProject(sort: {flotiqInternal: {createdAt: DESC}}) {
+          edges {
+            node {
+              slug
             }
+          }
         }
+      }
 `);
 
     if (result.errors) {
