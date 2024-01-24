@@ -50,8 +50,7 @@ const IndexPage = ({ data }) => {
                     <Contact
                         headerText1="Let's"
                         headerText2="work"
-                        headerText3="toget"
-                        headerText4="her"
+                        headerText3="together"
                         nameInputPlaceholder="name"
                         messageInputPlaceholder="message"
                         buttonLabel="Send"
