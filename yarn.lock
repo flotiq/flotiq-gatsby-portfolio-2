@@ -2024,10 +2024,10 @@
   resolved "https://registry.npmjs.org/@fontsource/archivo/-/archivo-4.5.10.tgz"
   integrity sha512-XBP+/ikevEu8huLBhBcV7Sdemx7R9KS07klXt8bcLrS9SBDWDzgKFYB4wxa9067uVl+0RooTKIMVbTLnKZsbQw==
 
-"@fontsource/inter@^4.5.4":
-  version "4.5.14"
-  resolved "https://registry.npmjs.org/@fontsource/inter/-/inter-4.5.14.tgz"
-  integrity sha512-JDC9AocdPLuGsASkvWw9hS5gtHE7K9dOwL98XLrk5yjYqxy4uVnScG58NUvFMJDVJRl/7c8Wnap6PEs+7Zvj1Q==
+"@fontsource/inter@^5.0.18":
+  version "5.0.18"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.18.tgz#eaddac790ee74b70932030f37ebaa9fc76decbd8"
+  integrity sha512-YCsoYPTcs713sI7tLtxaPrIhXAXvEetGg5Ry02ivA8qUOb3fQHojbK/X9HLD5OOKvFUNR2Ynkwb1kR1hVKQHpw==
 
 "@fontsource/lora@^4.5.4":
   version "4.5.12"
