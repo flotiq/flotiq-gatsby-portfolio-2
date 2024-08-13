@@ -36,7 +36,7 @@ const PortfolioProjectTemplate = ({ data }) => {
                         <GatsbyImage
                             image={getImage(project.headerImage[0] && project.headerImage[0].localFile)}
                             stretched="true"
-                            className={['px-1 rounded-3xl']}
+                            className={'px-1 rounded-3xl'}
                             alt={project.name}
                         />
                     </div>

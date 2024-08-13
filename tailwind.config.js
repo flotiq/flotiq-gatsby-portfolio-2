@@ -23,7 +23,6 @@ module.exports = {
     ],
     plugins: [
         require('@tailwindcss/typography'),
-        require('@tailwindcss/line-clamp'),
     ],
     safelist: require('./node_modules/flotiq-components-react/dist/tailwind.safelist'),
 };

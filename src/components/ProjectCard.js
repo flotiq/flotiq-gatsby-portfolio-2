@@ -12,7 +12,7 @@ const ProjectCard = ({ name, excerpt, image }) => (
         <GatsbyImage
             image={getImage(image)}
             alt={name}
-            className={['w-full rounded-3xl basis-full md:basis-1/2 xl:basis-3/5']}
+            className={'w-full rounded-3xl basis-full md:basis-1/2 xl:basis-3/5'}
         />
         <Card.Body additionalClasses={['basis-full md:basis-1/2 xl:basis-2/5']}>
             <div>
