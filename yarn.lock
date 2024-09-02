@@ -8840,7 +8840,7 @@ gatsby-cli@^5.13.3:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.12.0, gatsby-core-utils@^4.13.1, gatsby-core-utils@^4.3.1:
+gatsby-core-utils@^4.13.1, gatsby-core-utils@^4.3.1:
   version "4.13.1"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.13.1.tgz#57955316486cc85ab150922f481484bc9287205e"
   integrity sha512-w7G6SsQr8T2q+AJ1MxvRNGocCt+wjc22MiRLj2Zi3Ijpjszbr818JxwI4+aPt8WOSHlKT5SYCHICnEvcYPm9gg==
@@ -9085,7 +9085,7 @@ gatsby-sharp@^1.13.0:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-filesystem@^5.13.1:
+gatsby-source-filesystem@^5.13.1, gatsby-source-filesystem@^5.3.1:
   version "5.13.1"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.13.1.tgz#1aad8f969fbfd4efe6f7cfcd8542253f54fdbd8a"
   integrity sha512-nFWzOBpi84nDeVNeO7bpKL9mVYMl1tfjJmE5l868YATFShGzZnA6qMd200XCsf78PexZHAiV/P1MlsyKqjJduA==
@@ -9100,25 +9100,10 @@ gatsby-source-filesystem@^5.13.1:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-source-filesystem@^5.3.1:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.12.0.tgz#5f970fccc3102a4c62d99575c55a2a167912bb02"
-  integrity sha512-0BZkgADBu56vTzZ6TLvrMXhp8MzpEqvtpsI+VRtNTlsu6ULaHRjoMClomlAqWecjBXTkujhwpSjnIfEmpmCaLQ==
-  dependencies:
-    "@babel/runtime" "^7.20.13"
-    chokidar "^3.5.3"
-    file-type "^16.5.4"
-    fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.0"
-    mime "^3.0.0"
-    pretty-bytes "^5.6.0"
-    valid-url "^1.0.9"
-    xstate "^4.38.0"
-
-gatsby-source-flotiq@^5.2.1:
-  version "5.2.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-flotiq/-/gatsby-source-flotiq-5.2.1.tgz#f29d61ef7e1d1c2814a30f23128aec967ff410bf"
-  integrity sha512-lOxlGBj1Ug4N3tq6Efic9Qb4Ezj5ltNS5FvunPpVSjBxsuHHJv89Mq9SguYxa+378liseiHeUlYd7YPwkZNKoQ==
+gatsby-source-flotiq@^5.2.3:
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/gatsby-source-flotiq/-/gatsby-source-flotiq-5.2.3.tgz#ff4ab2ac68fc7d8ded909ba1f6f533652823fccd"
+  integrity sha512-EiLNWF9TeApgj3rvwe6UK2mlfGTDo2YQnDtI0tkepvpsQXac8bl+7QEcXZUXt49XZ5TXW8ma20dANHdy5LRZMg==
   dependencies:
     gatsby-core-utils "^4.3.1"
     gatsby-source-filesystem "^5.3.1"
@@ -11487,14 +11472,14 @@ node-fetch-native@^1.6.3:
   resolved "https://registry.yarnpkg.com/node-fetch-native/-/node-fetch-native-1.6.4.tgz#679fc8fd8111266d47d7e72c379f1bed9acff06e"
   integrity sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ==
 
-node-fetch@2.6.7, node-fetch@^2.6.7:
+node-fetch@2.6.7:
   version "2.6.7"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
   dependencies:
     whatwg-url "^5.0.0"
 
-node-fetch@^2.6.11:
+node-fetch@^2.6.11, node-fetch@^2.6.7:
   version "2.7.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
   integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
