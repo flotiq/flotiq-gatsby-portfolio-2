@@ -3134,10 +3134,10 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.7.tgz#d0ece53ce99ab5a8e37ebdfe5e32452a2bfc073e"
   integrity sha512-X8R8Oj771YRl/w+c1HqAC1szL8zWQRwFvgDwT129k9ACdBoud/+/rX9V0qiMl6LWUdP9voC2nDVZYPMQQsb6eA==
 
-"@fontsource/archivo@^5.0.19":
-  version "5.0.19"
-  resolved "https://registry.yarnpkg.com/@fontsource/archivo/-/archivo-5.0.19.tgz#ad2f0847d3933cfd2ab5d93ab3ffa387a56981ae"
-  integrity sha512-5cK6DGg3hA8+UgN7ExKFx2p7O6q5yuw4zSSeJCp4gU7fWuaH9dz3aaHtvUBZ/M0HxDFeMQ9aXN1v3XntFG45Lg==
+"@fontsource/archivo@^5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/archivo/-/archivo-5.1.0.tgz#fa08357692bc06f7e3666120d7b2ebfd9926f85b"
+  integrity sha512-zusUDuLRWmNYi5DhaXado+uj9ip8IarqgUdUlXQOrEVVQbN1gpueWy0Qbxnn6DSfEXo2cNneMPlv7MtG+XU8Zg==
 
 "@fontsource/inter@^5.0.20":
   version "5.0.20"
