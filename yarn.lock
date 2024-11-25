@@ -11594,10 +11594,10 @@ node-releases@^2.0.6:
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz"
   integrity sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg==
 
-node@^22.7.0:
-  version "22.7.0"
-  resolved "https://registry.yarnpkg.com/node/-/node-22.7.0.tgz#e874368366bdee52a653bd9a24978ba19251a8ce"
-  integrity sha512-kAwZlsleX72BXZ98aAhNRPshBTV/GM2eOLH9MMLLf7VSp0g1AY+GLYbgLv4MaolUaKrKmM1qGlV0coMHfFPNHA==
+node@^23.3.0:
+  version "23.3.0"
+  resolved "https://registry.yarnpkg.com/node/-/node-23.3.0.tgz#d3bb71cd4b768d6edf40da60a83190535cd5959f"
+  integrity sha512-mmegn9ko4TizlGud7PMIUk1Zl8JHeGl7Au7vGxoN38aPPHsqWN9UfWeXcuYnPgXsYqWtk0ogM27lpkQz6jHdgA==
   dependencies:
     node-bin-setup "^1.0.0"
 
