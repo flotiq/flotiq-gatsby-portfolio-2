@@ -1,6 +1,8 @@
 {
   "name": "project",
   "label": "Project",
+  "workflowId": "generic",
+  "internal": false,
   "schemaDefinition": {
     "type": "object",
     "allOf": [
@@ -113,5 +115,6 @@
         "inputType": "richtext"
       }
     }
-  }
+  },
+  "featuredImage": []
 }
