@@ -1,7 +1,6 @@
 {
   "name": "project",
   "label": "Project",
-  "workflowId": "generic",
   "internal": false,
   "schemaDefinition": {
     "type": "object",
